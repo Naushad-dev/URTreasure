@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="213dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text="Upload"
+            android:textColor="@color/btn_color"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Rimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/Rimg"
+            android:layout_width="242dp"
+            android:layout_height="155dp"
+
+            android:src="@drawable/uploadimgback"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.133"
+            tools:ignore="ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectbtn"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:hint="Title"
+
+                android:textColorHint="@color/btn_color"
+                app:boxStrokeColor="@color/btn_color"
+                app:hintTextColor="@color/btn_color"
+                app:placeholderTextColor="@color/btn_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/utitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="@integer/material_motion_duration_long_1"
+                    android:maxLines="1"
+                    android:textColor="@color/btn_color"
+                    android:textColorHint="@color/btn_color"
+                    android:textCursorDrawable="@color/btn_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:hint="Description"
+                android:textColorHint="@color/btn_color"
+                app:boxStrokeColor="@color/btn_color"
+                app:hintTextColor="@color/btn_color"
+                app:placeholderTextColor="@color/btn_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLength="@integer/material_motion_duration_long_1"
+                    android:singleLine="false"
+                    android:textColor="@color/btn_color"
+                    android:textColorHint="@color/btn_color"
+                    android:textCursorDrawable="@color/btn_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="172dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/btn_color"
+                android:text="UPLOAD"
+                android:textColor="@color/black1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:circularflow_radiusInDP="15dp"
+                app:cornerRadius="15dp">
+
+            </Button>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/selectbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_color"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_add_circle_24"
+            android:tint="#EA80FC"
+            app:layout_constraintBottom_toBottomOf="@+id/Rimg"
+            app:layout_constraintEnd_toEndOf="@+id/Rimg"
+            app:layout_constraintStart_toStartOf="@+id/Rimg"
+            app:layout_constraintTop_toBottomOf="@+id/Rimg"
+            app:layout_constraintVertical_bias="0.41"
+            app:rippleColor="@color/btn_color"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

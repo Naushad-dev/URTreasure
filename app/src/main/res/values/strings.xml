@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">URTreasure</string>
+
+    <string name="Register" translatable="false">Register</string>
+    <string name="login" translatable="false">Login</string>
+
+    <string name="title" translatable="false">URTreasure</string>
+    <string name="newuser">Create New User</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

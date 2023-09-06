@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/RegisterTV"
+        android:layout_width="217dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="107dp"
+        android:gravity="center"
+        android:text="@string/Register"
+        android:textColor="@color/btn_color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTV"
+        app:layout_constraintVertical_bias="0.147">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:hint="Name"
+            android:textColorHint="@color/btn_color"
+            app:boxStrokeColor="@color/btn_color"
+            app:hintTextColor="@color/btn_color"
+            app:placeholderTextColor="@color/btn_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLength="@integer/material_motion_duration_long_1"
+                android:maxLines="1"
+                android:textColor="@color/btn_color"
+                android:textColorHint="@color/btn_color"
+
+                android:textCursorDrawable="@color/btn_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:hint="Email"
+            android:textColorHint="@color/btn_color"
+            app:boxStrokeColor="@color/btn_color"
+            app:hintTextColor="@color/btn_color"
+            app:placeholderTextColor="@color/btn_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLength="@integer/material_motion_duration_long_1"
+
+                android:maxLines="1"
+                android:textColor="@color/btn_color"
+                android:textColorHint="@color/btn_color"
+
+                android:textCursorDrawable="@color/btn_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:hint="Password"
+            android:textColorHint="@color/btn_color"
+            app:boxStrokeColor="@color/btn_color"
+            app:hintTextColor="@color/btn_color"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/btn_color"
+
+            app:placeholderTextColor="@color/btn_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="textPassword"
+                android:maxLength="@integer/material_motion_duration_long_1"
+                android:maxLines="1"
+                android:textColor="@color/btn_color"
+                android:textColorHint="@color/btn_color"
+                android:textCursorDrawable="@color/btn_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--Dropdown Menus-->
+        <com.google.android.material.textfield.TextInputLayout
+
+
+            android:id="@+id/branch_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:hint="  Branch"
+            android:textColorHint="@color/btn_color"
+            app:boxStrokeColor="@color/btn_color"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/btn_color"
+            app:passwordToggleTint="@color/btn_color"
+
+            app:placeholderTextColor="@color/btn_color">
+
+            <AutoCompleteTextView
+                android:id="@+id/branchinput"
+                android:layout_width="match_parent"
+                android:layout_height="53sp"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+
+            android:id="@+id/year_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:hint="  Year"
+            android:textColorHint="@color/btn_color"
+            app:boxStrokeColor="@color/btn_color"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/btn_color"
+            app:passwordToggleTint="@color/btn_color"
+
+            app:placeholderTextColor="@color/btn_color">
+
+            <AutoCompleteTextView
+                android:id="@+id/yearinput"
+                android:layout_width="match_parent"
+                android:layout_height="53sp"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="172dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/btn_color"
+            android:text="@string/Register"
+            android:textColor="@color/black1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:circularflow_radiusInDP="15dp"
+            app:cornerRadius="15dp"
+
+
+            >
+
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
